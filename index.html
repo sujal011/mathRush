@@ -1,0 +1,56 @@
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>replit</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+        <div class="Container">
+                <h1 id="mainTimer" align="center">60</h1>
+                
+        <div class="gameContainer">
+                <div class="city" id="city"></div>
+                <div class="road" id="road"></div>
+             
+             <div class="car1" id="car1">
+                     <div class="car1-image">
+                        <img src="/src/cars/carf1.png" width="50%"></img>
+                                
+                        <img src="/src/cars/car-wheel.png" width="7%" class="wheel car1-back" style="padding-top:2px"></img>
+                        <img src="/src/cars/car-wheel.png" width="7%" class="wheel car1-front" style="padding-top:2px"></img>
+                        
+                        
+
+                     </div>
+             </div>
+             <div class="car2" id="car2">
+                     <div class="car2-image">
+                        <img src="/src/cars/carf2.png" width="50%"></img>
+
+                        <img src="/src/cars/car-wheel.png" width="7%" class="wheel car2-back" style="padding-top:2px"></img>
+                        <img src="/src/cars/car-wheel.png" width="7%" class="wheel car2-front" style="padding-top:2px"></img>
+                        
+
+                     </div>
+             </div>
+
+
+
+        </div>
+        <div class="equationBox">
+        
+                <span id="secTimer">countDown</span>
+                
+                <label>Solve --> </label><label id="equation">equation</label><input type="number" name="ans" id="ans" value="" /> <input type="submit" value="submit">
+                <button onclick="animate1()">Start</button>
+                </div>
+        </div>
+        
+        <script src="main.js"></script>
+
+</body>
+
+</html>

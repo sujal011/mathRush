@@ -1,0 +1,144 @@
+
+.Container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: blue;
+}
+.gameContainer{
+        height: 576px;
+        width: 1024px;
+        position: relative;
+        overflow: hidden;
+        
+}
+.city{
+        width:600%;
+        
+        
+        background-image: url(/src/cityF3.jpg);
+        position: absolute;
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        background-repeat: repeat-x;
+        z-index: 1;
+        
+}
+.road {
+        width: 500%;
+
+
+        background-image: url(/src/roadF3.jpg);
+        position: absolute;
+        top:316px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        background-repeat: repeat-x;
+        z-index: 2;
+
+}
+
+.wheel{
+        position: absolute;
+        z-index: 10;
+
+}
+.car1-back{
+        left:40px;
+        bottom:20px;
+}
+.car1-front{
+        left:201.8px;
+        bottom:18px;
+}
+.car2-back{
+        left:40px;
+        bottom:20px;
+}
+.car2-front{
+        left:201.8px;
+        bottom:20px;
+}
+
+
+.car1{
+        /* width: 10%; */
+        top:400px;
+        left:50px;
+        position: absolute;
+        z-index: 5;
+}
+.car2{
+        /* width: 10%; */
+        top:270px;
+        left:50px;
+        position: absolute;
+        z-index: 4;
+}
+
+
+
+.animateRoad{
+        animation: road 5s linear infinite;
+}
+.animateCity{
+        animation: city 20s linear infinite;
+}
+/* .animateCar{
+        animation: car 1s linear infinite;
+} */
+.animateWheels{
+        animation: wheels 2s linear infinite;
+}
+
+@keyframes road
+{
+        100%{
+                transform: translateX(-3400px);
+        }
+}
+
+
+@keyframes city
+{
+        100%{
+                transform: translateX(-1400px);
+        }
+}
+/* @keyframes car
+{
+        100%{
+                transform: translateY(-1px);
+        }
+        50%{
+                transform: translateY(1px);
+        }
+        0%{
+                transform: translateY(-1px);
+        }
+} */
+@keyframes wheels
+{
+        100%{
+                transform: rotate(360deg);
+        }
+        0%{
+                transform: rotate(0deg);
+        }
+}
+
+
+
+.equationBox{
+        background-color: red;
+        display: block;
+        text-align: center;
+        align-items: center;
+        
+}
